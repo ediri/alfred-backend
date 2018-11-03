@@ -36,5 +36,6 @@ exports.createMeetingNotes = (meetingNotes) => {
         options: options
     }, function(error, resp, body){
         console.log("Error: " + error);
+        console.log("Resp: " + resp)
     });
 }
