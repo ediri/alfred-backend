@@ -25,6 +25,6 @@ app.set('view engine', 'pug');
 
 app.use('/', indexRouter);
 app.use('/api', apiRouter);
-app.use('calendar',calendarRouter);
+app.use('/calendar',calendarRouter);
 
 module.exports = app;
