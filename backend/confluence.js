@@ -7,7 +7,7 @@ let request = require('request')
 //     notes: " "
 // }
 exports.createMeetingNotes = (meetingNotes) => {
-
+    console.log(meetingNotes);
     let bodyData = {
         title: meetingNotes.date + ' - ' +meetingNotes.title,
         type: "page",
