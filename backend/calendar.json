@@ -5,7 +5,7 @@
       "title": "Morgenmeeting",
       "date-start": "2018-11-05T08:00:00.000Z",
       "date-end": "2018-11-05T09:00:00.000Z",
-      "owner": "Engin",
+      "creator": "Engin",
       "location": 2,
       "location_name":"Roetelstrasse"
     },
@@ -13,7 +13,7 @@
       "title": "Project X Daily",
       "date-start": "2018-11-05T11:00:00.000Z",
       "date-end": "2018-11-05T12:00:00.000Z",
-      "owner": "Alex",
+      "creator": "Alex",
       "location": 3,
       "location_name":"Stiftsberg"
     },
@@ -21,7 +21,7 @@
       "title": "Budget Besprechung",
       "date-start": "2018-11-05T14:00:00.000Z",
       "date-end": "2018-11-05T15:00:00.000Z",
-      "owner": "Engin",
+      "creator": "Engin",
       "location": 6,
       "location_name":"Weinsberg"
     },
@@ -29,7 +29,7 @@
       "title": "Project Y Daily",
       "date-start": "2018-11-06T09:00:00.000Z",
       "date-end": "2018-11-06T10:00:00.000Z",
-      "owner": "Engin",
+      "creator": "Engin",
       "location": 5,
       "location_name":"Flein"
     },
@@ -37,7 +37,7 @@
       "title": "Meeting",
       "date-start": "2018-11-06T11:00:00.000Z",
       "date-end": "2018-11-06T12:00:00.000Z",
-      "owner": "Michael",
+      "creator": "Michael",
       "location": 4,
       "location_name":"Schwabenhof"
     },
@@ -45,7 +45,7 @@
       "title": "Meeting",
       "date-start": "2018-11-06T15:00:00.000Z",
       "date-end": "2018-11-06T16:00:00.000Z",
-      "owner": "Engin",
+      "creator": "Engin",
       "location": 5,
       "location_name":"Flein"
     },
@@ -53,7 +53,7 @@
       "title": "Meeting",
       "date-start": "2018-11-08T10:00:00.000Z",
       "date-end": "2018-11-08T11:00:00.000Z",
-      "owner": "Alex",
+      "creator": "Alex",
       "location": 6,
       "location_name":"Weinsberg"
     },
@@ -61,7 +61,7 @@
       "title": "Meeting",
       "date-start": "2018-11-08T11:00:00.000Z",
       "date-end": "2018-11-08T12:00:00.000Z",
-      "owner": "Engin",
+      "creator": "Engin",
       "location": 2,
       "location_name":"Roetelstrasse"
     }
@@ -72,7 +72,7 @@
       "title": "Meeting",
       "date-start": "2018-11-05T08:00:00.000Z",
       "date-end": "2018-11-05T09:00:00.000Z",
-      "owner": "Alex",
+      "creator": "Alex",
       "location": 6,
       "location_name":"Weinsberg"
     },
@@ -80,7 +80,7 @@
       "title": "Meeting",
       "date-start": "2018-11-05T10:00:00.000Z",
       "date-end": "2018-11-05T11:00:00.000Z",
-      "owner": "Engin",
+      "creator": "Engin",
       "location": 5,
       "location_name":"Flein"
     },
@@ -88,7 +88,7 @@
       "title": "Meeting",
       "date-start": "2018-11-05T16:00:00.000Z",
       "date-end": "2018-11-05T17:00:00.000Z",
-      "owner": "Alex",
+      "creator": "Alex",
       "location": 4,
       "location_name":"Schwabenhof"
     },
@@ -96,7 +96,7 @@
       "title": "Meeting",
       "date-start": "2018-11-06T10:00:00.000Z",
       "date-end": "2018-11-06T11:00:00.000Z",
-      "owner": "Michael",
+      "creator": "Michael",
       "location": 5,
       "location_name":"Flein"
     },
@@ -104,7 +104,7 @@
       "title": "Meeting",
       "date-start": "2018-11-06T16:00:00.000Z",
       "date-end": "2018-11-06T17:00:00.000Z",
-      "owner": "Engin",
+      "creator": "Engin",
       "location": 2,
       "location_name":"Rötelstrasse"
     },
@@ -112,7 +112,7 @@
       "title": "Meeting",
       "date-start": "2018-11-07T11:00:00.000Z",
       "date-end": "2018-11-07T12:00:00.000Z",
-      "owner": "Michael",
+      "creator": "Michael",
       "location": 6,
       "location_name":"Weinsberg"
     },
@@ -120,7 +120,7 @@
       "title": "Meeting",
       "date-start": "2018-11-07T15:00:00.000Z",
       "date-end": "2018-11-07T16:00:00.000Z",
-      "owner": "Engin",
+      "creator": "Engin",
       "location": 7,
       "location_name":"Strasbourg"
     },
@@ -128,7 +128,7 @@
       "title": "Meeting",
       "date-start": "2018-11-07T16:00:00.000Z",
       "date-end": "2018-11-07T17:00:00.000Z",
-      "owner": "Alex",
+      "creator": "Alex",
       "location": 5,
       "location_name":"Flein"
     },
@@ -136,7 +136,7 @@
       "title": "Meeting",
       "date-start": "2018-11-08T13:00:00.000Z",
       "date-end": "2018-11-08T14:00:00.000Z",
-      "owner": "Michael",
+      "creator": "Michael",
       "location": 2,
       "location_name":"Rötelstraße"
     }
@@ -147,7 +147,7 @@
       "title": "Meeting",
       "date-start": "2018-11-05T08:00:00.000Z",
       "date-end": "2018-11-05T09:00:00.000Z",
-      "owner": "Michael",
+      "creator": "Michael",
       "location": 3,
       "location_name":"Stiftsberg"
     },
@@ -155,7 +155,7 @@
       "title": "Meeting",
       "date-start": "2018-11-05T16:00:00.000Z",
       "date-end": "2018-11-05T17:00:00.000Z",
-      "owner": "Engin",
+      "creator": "Engin",
       "location": 5,
       "location_name":"Flein"
     },
@@ -163,7 +163,7 @@
       "title": "Meeting",
       "date-start": "2018-11-06T11:00:00.000Z",
       "date-end": "2018-11-06T12:00:00.000Z",
-      "owner": "Alex",
+      "creator": "Alex",
       "location": 5,
       "location_name":"Flein"
     },
@@ -171,7 +171,7 @@
       "title": "Meeting",
       "date-start": "2018-11-07T10:00:00.000Z",
       "date-end": "2018-11-07T11:00:00.000Z",
-      "owner": "Michael",
+      "creator": "Michael",
       "location": 4,
       "location_name":"Schwabenhof"
     },
@@ -179,7 +179,7 @@
       "title": "Meeting",
       "date-start": "2018-11-08T11:00:00.000Z",
       "date-end": "2018-11-08T12:00:00.000Z",
-      "owner": "Engin",
+      "creator": "Engin",
       "location": 4,
       "location_name":"Schwabenhof"
     }
