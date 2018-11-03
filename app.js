@@ -24,7 +24,7 @@ app.set('view engine', 'pug');
 //app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/api', apiRouter);
+app.use('/api/v1.0', apiRouter);
 app.use('/calendar',calendarRouter);
 
 module.exports = app;

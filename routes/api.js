@@ -4,7 +4,9 @@ let theEngine = require('../backend/albertTheButlerEngine');
 // let theDistanceDingends = require('../backend/distanceMatrix');
 let webex = require('../backend/webex')
 
-router.get('/findmeetingtimes', (req, res) => {
+router.post('/appointment', (req, res) => {
+
+
     theEngine.getMeeting();
     // console.log(theDistanceDingends.findBestLocations([2,2,3]))
     res.send({ hello: 'world' });
