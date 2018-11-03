@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', function (req, res, next) {
-    res.render('index', { title: 'Hey', message: 'Hello there!'})
+    res.render('calendar', { title: 'Hey', message: 'Hello there!'})
 });
 
 
