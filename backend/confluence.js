@@ -23,7 +23,6 @@ exports.createMeetingNotes = (meetingNotes) => {
     };
 
     let options = {
-        method: 'POST',
         auth: { username: 'codecampengin@outlook.de', password: 'codecamp01' },
         headers: {
             'Accept': 'application/json',
@@ -32,13 +31,10 @@ exports.createMeetingNotes = (meetingNotes) => {
         body: bodyData
     };
 
-    request(
-        'https://codecampheilbronn.atlassian.net/wiki/rest/api/content',
-        options, function (error, response, body) {
-        if (error) throw new Error(error);
-        console.log(
-            'Response: ' + response.statusCode + ' ' + response.statusMessage
-        );
-        console.log(body);
+    request.post({
+        url: 'https://codecampheilbronn.atlassian.net/wiki/rest/api/content',
+        options: options
+    }, function(error, resp, body){
+        console.log(error);
     });
 }
