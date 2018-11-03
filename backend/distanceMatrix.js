@@ -102,23 +102,4 @@ distanceMatrix[8][5]="2000";
 distanceMatrix[8][6]="2000";
 distanceMatrix[8][7]="2000";
 distanceMatrix[8][8]="0";
-
-exports.findBestLocations = (locations) => {
-    const result = [];
-    locations.map(loc => {
-        let minDist = 2000;
-        let index = 0;
-        for (let i = 1; i < distanceMatrix[loc].length; i++){
-            if (i !== j){
-                if (distanceMatrix[loc][i] < minDist){
-                    index = i;
-                    minDist = distanceMatrix[loc][i];
-                }
-            }
-        }
-        result.push(index)
-    })
-    return result
-}
-
 module.exports = distanceMatrix;
