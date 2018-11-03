@@ -6,7 +6,7 @@ let webex = require('../backend/webex')
 
 router.post('/appointment', (req, res) => {
 
-    let data = process.env.LOCAL ? require('../test_data/meetingCreateExample') : {};
+    let data = process.env.LOCAL ? require('../test_data/meetingCreateExample') : req.body.data;
     theEngine.getMeeting(data);
 
     res.send({hello: 'world'});
