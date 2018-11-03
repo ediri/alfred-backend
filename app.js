@@ -7,6 +7,7 @@ const mongoose = require('mongoose');
 
 const indexRouter = require('./routes/index');
 const apiRouter = require('./routes/api');
+const calendarRouter = require('./routes/calendar');
 
 let mongoDB = process.env.MONGODB_URI;
 mongoose.connect(mongoDB, { useNewUrlParser: true } ).then(success => console.log(success));
@@ -24,5 +25,6 @@ app.set('view engine', 'pug');
 
 app.use('/', indexRouter);
 app.use('/api', apiRouter);
+app.use('calendar',calendarRouter);
 
 module.exports = app;
