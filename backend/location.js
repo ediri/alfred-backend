@@ -10,5 +10,4 @@ const location = [
     { 'id': 8, 'name': 'Thessaloniki'}
 ];
 
-
 module.exports = location;

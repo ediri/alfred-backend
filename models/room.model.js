@@ -2,9 +2,10 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 let RoomSchema = new Schema({
+    id: {type: Number, required: true},
     name: {type: String, required: true, max: 100},
     size: {type: Number, required: true},
-    ressources: [String],
+    resources: [String],
     location: {
         name: {type: String},
         longitude: {type: Number},
