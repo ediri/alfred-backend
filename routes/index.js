@@ -6,9 +6,24 @@ const _= require('lodash');
 router.get('/', function(req, res, next) {
 
     const users = [
-        { 'user': 'barney',  'age': 36, 'active': true },
-        { 'user': 'fred',    'age': 40, 'active': false },
-        { 'user': 'pebbles', 'age': 1,  'active': true }
+      { 'id': 'codecampengin@outlook.de', 'name': 'Engin' },
+      { 'id': 'codecampmichael@outlook.de', 'name': 'Michael' },
+      { 'id': 'codecampannika@outlook.de', 'name': 'Annika' },
+      { 'id': 'codecamphassan@outlook.de', 'name': 'Hassan' },
+      { 'id': 'codecampalex@outlook.de', 'name': 'Alex' },
+      { 'id': 'codecampwaldemar@outlook.de', 'name': 'Waldemar' }
+    ];
+
+    const location = [
+      { 'id': 0, 'name': 'Webex'},
+      { 'id': 1, 'name': 'Leingarten'},
+      { 'id': 2, 'name': 'Roetelstrasse'},
+      { 'id': 3, 'name': 'Stiftsberg'},
+      { 'id': 4, 'name': 'Schwabenhof'},
+      { 'id': 5, 'name': 'Flein'},
+      { 'id': 6, 'name': 'Weinsberg'},
+      { 'id': 7, 'name': 'Strasbourg'},
+      { 'id': 8, 'name': 'Thessaloniki'}
     ];
 
     if (!_.isEmpty(req.query)) {
@@ -16,7 +31,7 @@ router.get('/', function(req, res, next) {
         if (_.isUndefined(user))
             res.send({message: 'no user found'})
         else {
-            res.send({age: user.age});
+            res.send({name: user.name});
         }
     } else {
         res.send({message: 'please send name as url parameter'})
