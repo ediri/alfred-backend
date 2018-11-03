@@ -6,7 +6,7 @@ let webex = require('../backend/webex')
 
 router.get('/findmeetingtimes', (req, res) => {
     theEngine.getMeeting();
-    console.log(theDistanceDingends.findBestLocations([2,2,3]))
+    // console.log(theDistanceDingends.findBestLocations([2,2,3]))
     res.send({ hello: 'world' });
 });
 
