@@ -19,7 +19,7 @@ router.post('/createMeetingRoom', (req, res) => {
 });
 
 router.post('/createMeetingNotes', (req, res) => {
-    confluence.createMeetingNotes(JSON.parse(req.body.data));
+    confluence.createMeetingNotes(req.body);
     res.send({ notes: 'created' });
 });
 
