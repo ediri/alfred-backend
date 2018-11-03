@@ -1,5 +1,6 @@
 const _ = require('lodash');
 const users = require('./users');
+const moment = require('moment');
 
 exports.getMeeting = (data) => {
     console.log("getMeeting", data);
@@ -11,7 +12,9 @@ exports.getMeeting = (data) => {
     const map1 = data.attendees.map(x => {
         player.push(_.find(users, {'name': x}));
     });
-    console.log(player);
+    const momentDate = moment(data.startingDate);
+    // 1 monday -  7 sunday
+    console.log(momentDate.isoWeekday());
 };
 
 /*exports.findBestLocations = (locations) => {
