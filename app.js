@@ -8,6 +8,7 @@ const mongoose = require('mongoose');
 const indexRouter = require('./routes/index');
 const apiRouter = require('./routes/api');
 const calendarRouter = require('./routes/calendar');
+const calendars = require('./backend/calendar');
 
 let mongoDB = process.env.MONGODB_URI;
 mongoose.connect(mongoDB, { useNewUrlParser: true } ).then(success => console.log(success));
@@ -16,6 +17,7 @@ let db = mongoose.connection;
 
 const app = express();
 
+app.locals.calendars=calendars;
 app.use(logger('dev'));
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());

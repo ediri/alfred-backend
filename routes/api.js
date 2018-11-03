@@ -2,8 +2,10 @@ const express = require('express');
 const router = express.Router();
 let theEngine = require('../backend/albertTheButlerEngine');
 // let theDistanceDingends = require('../backend/distanceMatrix');
-let webex = require('../backend/webex')
-let confluence = require('../backend/confluence')
+let webex = require('../backend/webex');
+let confluence = require('../backend/confluence');
+
+const _ = require('lodash');
 
 router.post('/appointment', (req, res) => {
 
@@ -13,14 +15,24 @@ router.post('/appointment', (req, res) => {
     res.send({hello: 'world'});
 });
 
+router.get('/appointment', (req, res) => {
+
+
+    const result = _.find(calendars, {'creator': req.param.creator});
+    console.log(result);
+
+    res.send({hello: 'world'});
+});
+
+
 router.post('/createMeetingRoom', (req, res) => {
     webex.createMeetingRoom('test');
-    res.send({ room: 'created' });
+    res.send({room: 'created'});
 });
 
 router.post('/createMeetingNotes', (req, res) => {
     confluence.createMeetingNotes(req.body);
-    res.send({ notes: 'created' });
+    res.send({notes: 'created'});
 });
 
 module.exports = router;
