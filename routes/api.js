@@ -29,7 +29,7 @@ router.get('/appointment', (req, res) => {
 
     console.log(resultArray);
 
-    res.send({hello: 'world'});
+    res.send(resultArray[0]);
 });
 
 
