@@ -6,19 +6,19 @@ exports.createMeeting = (title) => {
     })
         .then(function(res) {
             console.log(res)
-            spark.membership.create({
+            spark.memberships.create({
                 roomId: res.id,
                 personEmail: "codecampwaldemar@outlook.de",
                 isModerator: false
             })
                 .catch(function(reason) {
                     console.error(reason);
-                    process.exit(1);
+                    // process.exit(1);
                 });
         })
     // Make sure to log errors in case something goes wrong.
         .catch(function(reason) {
             console.error(reason);
-            process.exit(1);
+            // process.exit(1);
         });
 }
