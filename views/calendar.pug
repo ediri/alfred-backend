@@ -4,17 +4,91 @@ html
     link(rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css")
   body
 
-    div(<div class="w3-container">
-    <h2>Bordered Table</h2>
-    table(class="w3-table w3-bordered")
-     thead
-      tr
-       th
-       th Montag
-       th Dienstag
-       th Mittwoch
-       th Donnerstag
-       th Freitag
-      tr
+   each calendar in calendars
+    div(class="w3-container")
+     h2 #{calendar.owner}
+     table(class="w3-table w3-bordered")
+      thead
+       tr
+        th Uhrzeit
+        th Montag
+        th Dienstag
+        th Mittwoch
+        th Donnerstag
+        th Freitag
+      tbody
+       tr
+        td 8:00
+        each day_short in ['mo-8','di-8','mi-8','do-8','fr-8']
+            td(style=calendar[day_short] ? "background-color:red" : "background-color:transparent")
+             div
+                h3= calendar[day_short] ? calendar[day_short]['location_name'] : ''
+
+       tr
+        td 9:00
+        each day_short in ['mo-9','di-9','mi-9','do-9','fr-9']
+            td(style=calendar[day_short] ? "background-color:red" : "background-color:transparent")
+                div
+                    h3= calendar[day_short] ? calendar[day_short]['location_name'] : ''
+       tr
+        td 10:00
+        each day_short in ['mo-10','di-10','mi-10','do-10','fr-10']
+            td(style=calendar[day_short] ? "background-color:red" : "background-color:transparent")
+                div
+                    h3= calendar[day_short] ? calendar[day_short]['location_name'] : ''
+       tr
+        td 11:00
+        each day_short in ['mo-11','di-11','mi-11','do-11','fr-11']
+            td(style=calendar[day_short] ? "background-color:red" : "background-color:transparent")
+                div
+                    h3= calendar[day_short] ? calendar[day_short]['location_name'] : ''
+       tr
+        td 12:00
+        each day_short in ['mo-12','di-12','mi-12','do-12','fr-12']
+            td(style=calendar[day_short] ? "background-color:red" : "background-color:transparent")
+                div
+                    h3= calendar[day_short] ? calendar[day_short]['location_name'] : ''
+       tr
+        td 13:00
+        each day_short in ['mo-13','di-13','mi-13','do-13','fr-13']
+            td(style=calendar[day_short] ? "background-color:red" : "background-color:transparent")
+                div
+                    h3= calendar[day_short] ? calendar[day_short]['location_name'] : ''
+       tr
+        td 14:00
+        each day_short in ['mo-14','di-14','mi-14','do-14','fr-14']
+            td(style=calendar[day_short] ? "background-color:red" : "background-color:transparent")
+                div
+                    h3= calendar[day_short] ? calendar[day_short]['location_name'] : ''
+       tr
+        td 15:00
+        each day_short in ['mo-15','di-15','mi-15','do-15','fr-15']
+            td(style=calendar[day_short] ? "background-color:red" : "background-color:transparent")
+                div
+                    h3= calendar[day_short] ? calendar[day_short]['location_name'] : ''
+       tr
+        td 16:00
+        each day_short in ['mo-16','di-16','mi-16','do-16','fr-16']
+            td(style=calendar[day_short] ? "background-color:red" : "background-color:transparent")
+                div
+                    h3= calendar[day_short] ? calendar[day_short]['location_name'] : ''
+       tr
+        td 17:00
+        each day_short in ['mo-17','di-17','mi-17','do-17','fr-17']
+            td(style=calendar[day_short] ? "background-color:red" : "background-color:transparent")
+                div
+                    h3= calendar[day_short] ? calendar[day_short]['location_name'] : ''
+       tr
+        td 18:00
+        each day_short in ['mo-18','di-18','mi-18','do-18','fr-18']
+            td(style=calendar[day_short] ? "background-color:red" : "background-color:transparent")
+                div
+                    h3= calendar[day_short] ? calendar[day_short]['location_name'] : ''
+       tr
+        td 19:00
+        each day_short in ['mo-19','di-19','mi-19','do-19','fr-19']
+            td(style=calendar[day_short] ? "background-color:red" : "background-color:transparent")
+                div
+                    h3= calendar[day_short] ? calendar[day_short]['location_name'] : ''
 
 

@@ -1,0 +1,51 @@
+[
+  {
+    "owner": "Engin",
+    "mo-8": {
+      "location": 3,
+      "location_name":"Stiftsberg"
+    },
+    "di-9": {
+      "location": 5,
+      "location_name":"Flein"
+    },
+    "do-11": {
+      "location": 6,
+      "location_name":"Weinsberg"
+    }
+  },
+  {
+    "owner": "Alex",
+    "mo-8": {
+      "location": 6,
+      "location_name":"Weinsberg"
+    },
+    "di-10": {
+      "location": 5,
+      "location_name":"Flein"
+    },
+    "mi-13": {
+      "location": 2,
+      "location_name":"Rötelstraße"
+    }
+  },
+  {
+    "owner": "Michael",
+    "mo-8": {
+      "location": 3,
+      "location_name":"Stiftsberg"
+    },
+    "di-11": {
+      "location": 5,
+      "location_name":"Flein"
+    },
+    "mi-10": {
+      "location": 4,
+      "location_name":"Schwabenhof"
+    },
+    "do-11": {
+      "location": 4,
+      "location_name":"Schwabenhof"
+    }
+  }
+]

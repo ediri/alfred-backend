@@ -1,8 +1,9 @@
 const express = require('express');
 const router = express.Router();
+const calendars = require('../backend/calendar');
 
 router.get('/', function (req, res, next) {
-    res.render('calendar', { title: 'Hey', message: 'Hello there!'})
+    res.render('calendar', {calendars: calendars})
 });
 
 
