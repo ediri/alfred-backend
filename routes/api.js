@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
-let distanceMatrix = require('../backend/distanceMatrix');
+let theEngine = require('../backend/albertTheButlerEngine');
 
 router.get('/findmeetingtimes', (req, res) => {
 
-    console.log(distanceMatrix[1][2])
+    theEngine.getMeeting();
     res.send({ hello: 'world' });
 });
 
