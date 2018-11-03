@@ -22,7 +22,7 @@ exports.createMeetingNotes = (meetingNotes) => {
         }
     };
 
-    var options = {
+    let options = {
         method: 'POST',
         url: 'https://codecampheilbronn.atlassian.net/wiki/rest/api/content',
         auth: { username: 'codecampengin@outlook.de', password: 'codecamp01' },
