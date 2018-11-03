@@ -24,7 +24,6 @@ exports.createMeetingNotes = (meetingNotes) => {
 
     let options = {
         method: 'POST',
-        url: 'https://codecampheilbronn.atlassian.net/wiki/rest/api/content',
         auth: { username: 'codecampengin@outlook.de', password: 'codecamp01' },
         headers: {
             'Accept': 'application/json',
@@ -33,7 +32,9 @@ exports.createMeetingNotes = (meetingNotes) => {
         body: bodyData
     };
 
-    request(options, function (error, response, body) {
+    request(
+        'https://codecampheilbronn.atlassian.net/wiki/rest/api/content',
+        options, function (error, response, body) {
         if (error) throw new Error(error);
         console.log(
             'Response: ' + response.statusCode + ' ' + response.statusMessage
