@@ -18,8 +18,16 @@ router.post('/appointment', (req, res) => {
 router.get('/appointment', (req, res) => {
 
 
-    const result = _.find(calendars, {'creator': req.param.creator});
-    console.log(result);
+    const result2 = _.map(req.app.locals.calendars, 'events');
+
+    const resultArray = [];
+    _.forEach(result2, function (value) {
+        const result = _.find(value, {'creator': req.query.creator, 'date-start': req.query.date});
+        if (!_.isUndefined(result))
+            resultArray.push(result);
+    });
+
+    console.log(resultArray);
 
     res.send({hello: 'world'});
 });
@@ -33,7 +41,7 @@ router.post('/createMeetingRoom', (req, res) => {
 router.post('/createMeetingNotes', (req, res) => {
     console.log(req.body);
     confluence.createMeetingNotes(req.body.data);
-    res.send({ notes: 'created' });
+    res.send({notes: 'created'});
 });
 
 module.exports = router;
