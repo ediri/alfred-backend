@@ -31,8 +31,13 @@ router.post('/createMeetingRoom', (req, res) => {
 });
 
 router.post('/createMeetingNotes', (req, res) => {
-    confluence.createMeetingNotes(req.body);
-    res.send({notes: 'created'});
+    let data = {
+        "date": req.body.date,
+        "title": req.body.title,
+        "notes": req.body.notes
+    }
+    confluence.createMeetingNotes(data);
+    res.send({ notes: 'created' });
 });
 
 module.exports = router;
