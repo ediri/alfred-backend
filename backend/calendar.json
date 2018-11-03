@@ -2,29 +2,90 @@
   {
     "owner": "Engin",
     "mo-8": {
+      "title": "Morgenmeeting",
+      "location": 2,
+      "location_name":"Roetelstrasse"
+    },
+    "mo-11": {
+      "title": "Project X Daily",
       "location": 3,
       "location_name":"Stiftsberg"
     },
+    "mo-14": {
+      "title": "Budget Besprechung",
+      "location": 6,
+      "location_name":"Weinsberg"
+    },
     "di-9": {
+      "title": "Project Y Daily",
       "location": 5,
       "location_name":"Flein"
     },
-    "do-11": {
+    "di-11": {
+      "title": "Meeting",
+      "location": 4,
+      "location_name":"Schwabenhof"
+    },
+    "di-15": {
+      "title": "Meeting",
+      "location": 5,
+      "location_name":"Flein"
+    },
+    "do-10": {
+      "title": "Meeting",
       "location": 6,
       "location_name":"Weinsberg"
+    },
+    "do-11": {
+      "title": "Meeting",
+      "location": 2,
+      "location_name":"Roetelstrasse"
     }
   },
   {
     "owner": "Alex",
     "mo-8": {
+      "title": "Meeting",
       "location": 6,
       "location_name":"Weinsberg"
     },
-    "di-10": {
+    "mo-10": {
+      "title": "Meeting",
       "location": 5,
       "location_name":"Flein"
     },
-    "mi-13": {
+    "mo-16": {
+      "title": "Meeting",
+      "location": 4,
+      "location_name":"Schwabenhof"
+    },
+    "di-10": {
+      "title": "Meeting",
+      "location": 5,
+      "location_name":"Flein"
+    },
+    "di-16": {
+      "title": "Meeting",
+      "location": 2,
+      "location_name":"Rötelstrasse"
+    },
+    "mi-11": {
+      "title": "Meeting",
+      "location": 6,
+      "location_name":"Weinsberg"
+    },
+    "mi-15": {
+      "title": "Meeting",
+      "location": 7,
+      "location_name":"Strasbourg"
+    },
+    "mi-16": {
+      "title": "Meeting",
+      "location": 5,
+      "location_name":"Flein"
+    },
+    "do-13": {
+      "title": "Meeting",
       "location": 2,
       "location_name":"Rötelstraße"
     }
@@ -32,18 +93,27 @@
   {
     "owner": "Michael",
     "mo-8": {
+      "title": "Meeting",
       "location": 3,
       "location_name":"Stiftsberg"
     },
+    "mo-8": {
+      "title": "Meeting",
+      "location": 5,
+      "location_name":"Flein"
+    },
     "di-11": {
+      "title": "Meeting",
       "location": 5,
       "location_name":"Flein"
     },
     "mi-10": {
+      "title": "Meeting",
       "location": 4,
       "location_name":"Schwabenhof"
     },
     "do-11": {
+      "title": "Meeting",
       "location": 4,
       "location_name":"Schwabenhof"
     }
