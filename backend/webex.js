@@ -1,6 +1,6 @@
 const spark = require('ciscospark/env');
 
-exports.createMeeting = (title) => {
+exports.createMeetingRoom = (title) => {
     spark.rooms.create({
         title: title
     })

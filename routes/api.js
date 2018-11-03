@@ -3,6 +3,7 @@ const router = express.Router();
 let theEngine = require('../backend/albertTheButlerEngine');
 // let theDistanceDingends = require('../backend/distanceMatrix');
 let webex = require('../backend/webex')
+let confluence = require('../backend/confluence')
 
 router.post('/appointment', (req, res) => {
 
@@ -13,8 +14,13 @@ router.post('/appointment', (req, res) => {
 });
 
 router.post('/createMeetingRoom', (req, res) => {
-    webex.createMeeting('test')
-    res.send({room: 'created'})
-})
+    webex.createMeetingRoom('test');
+    res.send({ room: 'created' });
+});
+
+router.post('/createMeetingNotes', (req, res) => {
+    confluence.createMeetingNotes(req.body);
+    res.send({ notes: 'created' });
+});
 
 module.exports = router;
