@@ -35,6 +35,6 @@ exports.createMeetingNotes = (meetingNotes) => {
         url: 'https://codecampheilbronn.atlassian.net/wiki/rest/api/content',
         options: options
     }, function(error, resp, body){
-        console.log(error);
+        console.log("Error: " + error);
     });
 }
