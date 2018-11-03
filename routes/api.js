@@ -9,8 +9,8 @@ const _ = require('lodash');
 
 router.post('/appointment', (req, res) => {
 
-    let data = process.env.LOCAL ? require('../test_data/meetingCreateExample') : req.body.data;
-    theEngine.getMeeting(JSON.parse(data));
+    let data = process.env.LOCAL ? require('../test_data/meetingCreateExample') : req.body.result.parameters.echoText;
+    //theEngine.getMeeting(JSON.parse(data));
 
     res.send({hello: 'world'});
 });
