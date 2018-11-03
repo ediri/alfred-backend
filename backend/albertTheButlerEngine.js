@@ -1,9 +1,9 @@
-let distanceMatrix = require('distanceMatrix')
+
 exports.getMeeting = () => {
     console.log("getMeeting");
 };
 
-exports.findBestLocations = (locations) => {
+/*exports.findBestLocations = (locations) => {
     const result = [];
     locations.map(loc => {
         let minDist = 2000;
@@ -19,4 +19,4 @@ exports.findBestLocations = (locations) => {
         result.push(index)
     })
     return result
-}
+}*/
