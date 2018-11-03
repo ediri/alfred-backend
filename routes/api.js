@@ -12,6 +12,7 @@ router.get('/findmeetingtimes', (req, res) => {
 
 router.post('/createMeetingRoom', (req, res) => {
     webex.createMeeting('test')
+    res.send({ room: 'created' })
 })
 
 module.exports = router;
