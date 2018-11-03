@@ -6,15 +6,15 @@ let webex = require('../backend/webex')
 
 router.post('/appointment', (req, res) => {
 
+    let data = process.env.LOCAL ? require('../test_data/meetingCreateExample') : {};
+    theEngine.getMeeting(data);
 
-    theEngine.getMeeting();
-    // console.log(theDistanceDingends.findBestLocations([2,2,3]))
-    res.send({ hello: 'world' });
+    res.send({hello: 'world'});
 });
 
 router.post('/createMeetingRoom', (req, res) => {
     webex.createMeeting('test')
-    res.send({ room: 'created' })
+    res.send({room: 'created'})
 })
 
 module.exports = router;

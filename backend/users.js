@@ -1,10 +1,10 @@
 const users = [
-    { email: 'codecampengin@outlook.de', name: 'Engin', roleId: 2 },
-    { email: 'codecampmichael@outlook.de', name: 'Michael', roleId: 2 },
-    { email: 'codecampannika@outlook.de', name: 'Annika', roleId: 2 },
-    { email: 'codecamphassan@outlook.de', name: 'Hassan', roleId: 2 },
-    { email: 'codecampalex@outlook.de', name: 'Alex', roleId: 2 },
-    { email: 'codecampwaldemar@outlook.de', name: 'Waldemar', roleId: 2 }
+    {name: 'Engin', location: 1, roleId: 2},
+    {name: 'Michael', location: 3, roleId: 2},
+    {name: 'Annika', location: 4, roleId: 2},
+    {name: 'Hassan', location: 8, roleId: 2},
+    {name: 'Alex', location: 6, roleId: 2},
+    {name: 'Waldemar', location: 5, roleId: 2}
 ];
 
 module.exports = users;

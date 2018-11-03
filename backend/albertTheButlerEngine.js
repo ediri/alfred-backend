@@ -1,6 +1,17 @@
+const _ = require('lodash');
+const users = require('./users');
 
-exports.getMeeting = () => {
-    console.log("getMeeting");
+exports.getMeeting = (data) => {
+    console.log("getMeeting", data);
+
+
+    const player = [];
+    const creator = _.find(users, {'name': data.creator});
+    player.push(creator);
+    const map1 = data.attendees.map(x => {
+        player.push(_.find(users, {'name': x}));
+    });
+    console.log(player);
 };
 
 /*exports.findBestLocations = (locations) => {
