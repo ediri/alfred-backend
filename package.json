@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "MONGODB_URI=mongodb+srv://codecamp:<pw>@cluster0-sfmkj.mongodb.net/test?retryWrites=true node ./bin/www"
+    "start": "node ./bin/www",
+    "start_local": "MONGODB_URI=mongodb+srv://codecamp:<pw>@cluster0-sfmkj.mongodb.net/test?retryWrites=true node ./bin/www"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
