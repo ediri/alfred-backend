@@ -1,12 +1,19 @@
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 
-var indexRouter = require('./routes/index');
-var apiRouter = require('./routes/api');
+const indexRouter = require('./routes/index');
+const apiRouter = require('./routes/api');
 
-var app = express();
+let mongoDB = process.env.MONGODB_URI;
+mongoose.connect(mongoDB, { useNewUrlParser: true } ).then(success => console.log(success));
+mongoose.Promise = global.Promise;
+let db = mongoose.connection;
+
+const app = express();
 
 app.use(logger('dev'));
 app.use(express.json());
