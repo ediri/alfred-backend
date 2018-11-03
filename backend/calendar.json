@@ -3,41 +3,57 @@
     "owner": "Engin",
     "mo-8": {
       "title": "Morgenmeeting",
+      "date-start": "2018-11-05T08:00:00.000Z",
+      "date-end": "2018-11-05T09:00:00.000Z",
       "location": 2,
       "location_name":"Roetelstrasse"
     },
     "mo-11": {
       "title": "Project X Daily",
+      "date-start": "2018-11-05T11:00:00.000Z",
+      "date-end": "2018-11-05T12:00:00.000Z",
       "location": 3,
       "location_name":"Stiftsberg"
     },
     "mo-14": {
       "title": "Budget Besprechung",
+      "date-start": "2018-11-05T14:00:00.000Z",
+      "date-end": "2018-11-05T15:00:00.000Z",
       "location": 6,
       "location_name":"Weinsberg"
     },
     "di-9": {
       "title": "Project Y Daily",
+      "date-start": "2018-11-06T09:00:00.000Z",
+      "date-end": "2018-11-06T10:00:00.000Z",
       "location": 5,
       "location_name":"Flein"
     },
     "di-11": {
       "title": "Meeting",
+      "date-start": "2018-11-06T11:00:00.000Z",
+      "date-end": "2018-11-06T12:00:00.000Z",
       "location": 4,
       "location_name":"Schwabenhof"
     },
     "di-15": {
       "title": "Meeting",
+      "date-start": "2018-11-06T15:00:00.000Z",
+      "date-end": "2018-11-06T16:00:00.000Z",
       "location": 5,
       "location_name":"Flein"
     },
     "do-10": {
       "title": "Meeting",
+      "date-start": "2018-11-08T10:00:00.000Z",
+      "date-end": "2018-11-08T11:00:00.000Z",
       "location": 6,
       "location_name":"Weinsberg"
     },
     "do-11": {
       "title": "Meeting",
+      "date-start": "2018-11-08T11:00:00.000Z",
+      "date-end": "2018-11-08T12:00:00.000Z",
       "location": 2,
       "location_name":"Roetelstrasse"
     }
@@ -46,46 +62,64 @@
     "owner": "Alex",
     "mo-8": {
       "title": "Meeting",
+      "date-start": "2018-11-05T08:00:00.000Z",
+      "date-end": "2018-11-05T09:00:00.000Z",
       "location": 6,
       "location_name":"Weinsberg"
     },
     "mo-10": {
       "title": "Meeting",
+      "date-start": "2018-11-05T10:00:00.000Z",
+      "date-end": "2018-11-05T11:00:00.000Z",
       "location": 5,
       "location_name":"Flein"
     },
     "mo-16": {
       "title": "Meeting",
+      "date-start": "2018-11-05T16:00:00.000Z",
+      "date-end": "2018-11-05T17:00:00.000Z",
       "location": 4,
       "location_name":"Schwabenhof"
     },
     "di-10": {
       "title": "Meeting",
+      "date-start": "2018-11-06T10:00:00.000Z",
+      "date-end": "2018-11-06T11:00:00.000Z",
       "location": 5,
       "location_name":"Flein"
     },
     "di-16": {
       "title": "Meeting",
+      "date-start": "2018-11-06T16:00:00.000Z",
+      "date-end": "2018-11-06T17:00:00.000Z",
       "location": 2,
       "location_name":"Rötelstrasse"
     },
     "mi-11": {
       "title": "Meeting",
+      "date-start": "2018-11-07T11:00:00.000Z",
+      "date-end": "2018-11-07T12:00:00.000Z",
       "location": 6,
       "location_name":"Weinsberg"
     },
     "mi-15": {
       "title": "Meeting",
+      "date-start": "2018-11-07T15:00:00.000Z",
+      "date-end": "2018-11-07T16:00:00.000Z",
       "location": 7,
       "location_name":"Strasbourg"
     },
     "mi-16": {
       "title": "Meeting",
+      "date-start": "2018-11-07T16:00:00.000Z",
+      "date-end": "2018-11-07T17:00:00.000Z",
       "location": 5,
       "location_name":"Flein"
     },
     "do-13": {
       "title": "Meeting",
+      "date-start": "2018-11-08T13:00:00.000Z",
+      "date-end": "2018-11-08T14:00:00.000Z",
       "location": 2,
       "location_name":"Rötelstraße"
     }
@@ -94,26 +128,36 @@
     "owner": "Michael",
     "mo-8": {
       "title": "Meeting",
+      "date-start": "2018-11-05T08:00:00.000Z",
+      "date-end": "2018-11-05T09:00:00.000Z",
       "location": 3,
       "location_name":"Stiftsberg"
     },
-    "mo-8": {
+    "mo-16": {
       "title": "Meeting",
+      "date-start": "2018-11-05T16:00:00.000Z",
+      "date-end": "2018-11-05T17:00:00.000Z",
       "location": 5,
       "location_name":"Flein"
     },
     "di-11": {
       "title": "Meeting",
+      "date-start": "2018-11-06T11:00:00.000Z",
+      "date-end": "2018-11-06T12:00:00.000Z",
       "location": 5,
       "location_name":"Flein"
     },
     "mi-10": {
       "title": "Meeting",
+      "date-start": "2018-11-07T10:00:00.000Z",
+      "date-end": "2018-11-07T11:00:00.000Z",
       "location": 4,
       "location_name":"Schwabenhof"
     },
     "do-11": {
       "title": "Meeting",
+      "date-start": "2018-11-08T11:00:00.000Z",
+      "date-end": "2018-11-08T12:00:00.000Z",
       "location": 4,
       "location_name":"Schwabenhof"
     }
