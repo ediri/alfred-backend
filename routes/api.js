@@ -42,7 +42,14 @@ router.get('/appointment', (req, res) => {
 
 
 router.post('/createMeetingRoom', (req, res) => {
-    webex.createMeetingRoom('test');
+    let data = {
+        title: 'Title',
+        mails: [
+            'codecampwaldemar@outlook.com',
+            'codecampengin@outlook.com'
+        ]
+    }
+    webex.createMeetingRoom(data);
     res.send({room: 'created'});
 });
 
