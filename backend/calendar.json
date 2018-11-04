@@ -34,7 +34,7 @@
         "location_name":"Flein"
       },
       {
-        "title": "Meeting",
+        "title": "Meeting mit Christian",
         "date-start": "2018-11-06T11:00:00.000Z",
         "date-end": "2018-11-06T12:00:00.000Z",
         "creator": "Engin",
@@ -42,7 +42,7 @@
         "location_name":"Schwabenhof"
       },
       {
-        "title": "Meeting",
+        "title": "Migration von DMS",
         "date-start": "2018-11-06T15:00:00.000Z",
         "date-end": "2018-11-06T16:00:00.000Z",
         "creator": "Engin",
@@ -50,7 +50,7 @@
         "location_name":"Flein"
       },
       {
-        "title": "Meeting",
+        "title": "Testen von Jenkins",
         "date-start": "2018-11-08T10:00:00.000Z",
         "date-end": "2018-11-08T11:00:00.000Z",
         "creator": "Engin",
@@ -58,7 +58,7 @@
         "location_name":"Weinsberg"
       },
       {
-        "title": "Meeting",
+        "title": "Budgetplannung",
         "date-start": "2018-11-08T11:00:00.000Z",
         "date-end": "2018-11-08T12:00:00.000Z",
         "creator": "Engin",
@@ -78,7 +78,7 @@
       "location_name":"Weinsberg"
     },
       {
-        "title": "Meeting",
+        "title": "Openshift Update",
         "date-start": "2018-11-05T10:00:00.000Z",
         "date-end": "2018-11-05T11:00:00.000Z",
         "creator": "Alex",
@@ -86,7 +86,7 @@
         "location_name":"Flein"
       },
       {
-        "title": "Meeting",
+        "title": "#DoDevOps",
         "date-start": "2018-11-05T16:00:00.000Z",
         "date-end": "2018-11-05T17:00:00.000Z",
         "creator": "Alex",
@@ -94,7 +94,7 @@
         "location_name":"Schwabenhof"
       },
       {
-        "title": "Meeting",
+        "title": "Team JF",
         "date-start": "2018-11-06T10:00:00.000Z",
         "date-end": "2018-11-06T11:00:00.000Z",
         "creator": "Alex",
@@ -102,7 +102,7 @@
         "location_name":"Flein"
       },
       {
-        "title": "Meeting",
+        "title": "Meeting mit TL",
         "date-start": "2018-11-06T16:00:00.000Z",
         "date-end": "2018-11-06T17:00:00.000Z",
         "creator": "Alex",
@@ -110,7 +110,7 @@
         "location_name":"Rötelstrasse"
       },
       {
-        "title": "Meeting",
+        "title": "Essen mit DEV",
         "date-start": "2018-11-07T11:00:00.000Z",
         "date-end": "2018-11-07T12:00:00.000Z",
         "creator": "Alex",
@@ -118,7 +118,7 @@
         "location_name":"Weinsberg"
       },
       {
-        "title": "Meeting",
+        "title": "Update von Ansible",
         "date-start": "2018-11-07T15:00:00.000Z",
         "date-end": "2018-11-07T16:00:00.000Z",
         "creator": "Alex",
@@ -126,7 +126,7 @@
         "location_name":"Strasbourg"
       },
       {
-        "title": "Meeting",
+        "title": "Donwtime Linux Host",
         "date-start": "2018-11-07T16:00:00.000Z",
         "date-end": "2018-11-07T17:00:00.000Z",
         "creator": "Alex",
@@ -134,7 +134,7 @@
         "location_name":"Flein"
       },
       {
-        "title": "Meeting",
+        "title": "Meetup Frankfurt - Openshift",
         "date-start": "2018-11-08T13:00:00.000Z",
         "date-end": "2018-11-08T14:00:00.000Z",
         "creator": "Alex",
@@ -146,7 +146,7 @@
   {
     "owner": "Michael",
     "events": [{
-      "title": "Meeting",
+      "title": ".NET JF",
       "date-start": "2018-11-05T08:00:00.000Z",
       "date-end": "2018-11-05T09:00:00.000Z",
       "creator": "Michael",
@@ -154,7 +154,7 @@
       "location_name":"Stiftsberg"
     },
       {
-        "title": "Meeting",
+        "title": "#DoDevOps",
         "date-start": "2018-11-05T16:00:00.000Z",
         "date-end": "2018-11-05T17:00:00.000Z",
         "creator": "Michael",
@@ -162,7 +162,7 @@
         "location_name":"Flein"
       },
       {
-        "title": "Meeting",
+        "title": "Jenkins aufsetzen DMS",
         "date-start": "2018-11-06T11:00:00.000Z",
         "date-end": "2018-11-06T12:00:00.000Z",
         "creator": "Michael",
@@ -170,7 +170,7 @@
         "location_name":"Flein"
       },
       {
-        "title": "Meeting",
+        "title": "LNP Architekturmeeting",
         "date-start": "2018-11-07T10:00:00.000Z",
         "date-end": "2018-11-07T11:00:00.000Z",
         "creator": "Michael",
@@ -178,7 +178,7 @@
         "location_name":"Schwabenhof"
       },
       {
-        "title": "Meeting",
+        "title": "Stand-Up",
         "date-start": "2018-11-08T11:00:00.000Z",
         "date-end": "2018-11-08T12:00:00.000Z",
         "creator": "Michael",
