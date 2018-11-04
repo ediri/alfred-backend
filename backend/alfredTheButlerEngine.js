@@ -1,6 +1,7 @@
 const _ = require('lodash');
 const users = require('./users');
 const moment = require('moment');
+const webex = require('./webex');
 
 function findOwnerOrCreateOwnerEntry(creatorCalendar, data, calendar, owner) {
     if (_.isUndefined(creatorCalendar)) {
@@ -44,6 +45,13 @@ exports.getMeeting = (data, calendar) => {
         creatorCalendar = _.find(calendar, {'owner': x});
         findOwnerOrCreateOwnerEntry(creatorCalendar, data, calendar, x);
     });
+
+    const webexData = {
+        title: data.title,
+        startDate: data.startingDate,
+        mails: [_.map(player, 'mail')]
+    }
+    webex.createMeetingRoom(webexData);
 };
 
 exports.getMeetingDialogFlow = (data, calendar) => {
@@ -79,6 +87,13 @@ exports.getMeetingDialogFlow = (data, calendar) => {
         creatorCalendar = _.find(calendar, {'owner': x.name});
         creatorCalendar= findOwnerOrCreateOwnerEntry(creatorCalendar, meetingItem, calendar, x.name);
     });
+
+    const webexData = {
+        title: content,
+        startDate: meetingDate,
+        mails: [_.map(player, 'mail')]
+    }
+    webex.createMeetingRoom(webexData);
 };
 
 /*exports.findBestLocations = (locations) => {
