@@ -50,6 +50,7 @@ exports.getMeetingDialogFlow = (data) => {
 
     console.log("getMeetingDialogFlow", data);
     var resp = data.queryResult.outputContexts[0];
+    console.log(resp);
     const player = [];
     resp.parameters.Teilnehmer.map(x => {player.push(_.find(users,{'name':x}))});
     player.forEach(item => {
