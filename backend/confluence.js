@@ -25,7 +25,6 @@ exports.createMeetingNotes = (meetingNotes) => {
     let options = {
         auth: { username: 'codecampengin@outlook.de', password: 'codecamp01' },
         headers: {
-            'Accept': 'application/json',
             'Content-Type': 'application/json',
             'X-Atlassian-Token': 'no_check'
         },
