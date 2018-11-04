@@ -2,19 +2,22 @@ html
   head
     title= title
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  body
+  body(style="background-color: #FAFAFA;")
 
   h1 Kalenderübersicht
   each calendar in calendars
-   div(class="card" style="width: 100%;")
+   div(class="card" style="width: 100%;background-color: #FAFAFA;")
     div(class="container")
      div(class="row")
       div(class="col-sm")
-       h2=calendar.owner
+       h2(class="container")=calendar.owner
        each events in calendar.events
         div(class="container")
          div(class="row")
-         div(class="card" style="width: 50%;")
+         div(class="card" style="width: 50%; margin:5px")
           div(class="card-body")
-           h5(class="card-title")=events.title
-           p(class="card-text")= events.location_name
+           h5(class="card-title" style="color: rgb(0, 118, 191)")=events.title
+           p(class="card-text")
+             i= events.location_name
+           h6(class="card-text") Ausstattung:
+             i= events.equipment
