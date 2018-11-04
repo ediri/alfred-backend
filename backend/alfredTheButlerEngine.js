@@ -70,14 +70,14 @@ exports.getMeetingDialogFlow = (data, calendar) => {
     var roomResources = resp.parameters.Ausstattung;
 
     let creatorCalendar = _.find(calendar, {'owner': creator.name});
+
     let meetingItem = {startingDate: moment(), title: content, equipment: roomResources, location_name: "Flein"}
     creatorCalendar = findOwnerOrCreateOwnerEntry(creatorCalendar, meetingItem, calendar, creator.name);
 
     resp.parameters.Teilnehmer.map(x => {
         creatorCalendar = _.find(calendar, {'owner': x});
-        findOwnerOrCreateOwnerEntry(creatorCalendar, meetingItem, calendar, x);
+        creatorCalendar= findOwnerOrCreateOwnerEntry(creatorCalendar, meetingItem, calendar, x);
     });
-
 };
 
 /*exports.findBestLocations = (locations) => {
