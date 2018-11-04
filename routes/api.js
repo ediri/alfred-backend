@@ -15,6 +15,14 @@ router.post('/appointment', (req, res) => {
     res.send({hello: 'world'});
 });
 
+router.post('/dialogflow/appointment', (req, res) => {
+
+    let data = process.env.LOCAL ? require('../test_data/dialogFlow') : req.body;
+    theEngine.getMeetingDialogFlow(data);
+
+    res.send({hello: 'world'});
+});
+
 router.get('/appointment', (req, res) => {
 
 
