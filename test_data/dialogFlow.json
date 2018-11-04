@@ -1,19 +1,19 @@
 {
-  "responseId": "6b6f12a2-bfdc-4e70-8fc6-f7f5e795a1e0",
+  "responseId": "11bc765c-8eb3-4c86-abfb-eb783ef873a1",
   "queryResult": {
-    "queryText": "nein",
-    "action": "Terminanfordern.Terminanfordern-no",
+    "queryText": "beamer",
     "parameters": {
-      "FlagRaum": "0",
-      "teilnehmer": []
+      "Ausstattung": [
+        "Beamer "
+      ]
     },
     "allRequiredParamsPresent": true,
-    "fulfillmentText": "Termin gebucht!",
+    "fulfillmentText": "Dein Meeting wurde erstellt und die Teilnehmer informiert.",
     "fulfillmentMessages": [
       {
         "text": {
           "text": [
-            "Termin gebucht!"
+            "Dein Meeting wurde erstellt und die Teilnehmer informiert."
           ]
         }
       }
@@ -21,42 +21,43 @@
     "outputContexts": [
       {
         "name": "projects/alfred-2eab3/agent/sessions/94048555-21b0-8f11-037a-c6da99f69a13/contexts/terminangefordert",
-        "lifespanCount": 4,
+        "lifespanCount": 5,
         "parameters": {
           "FlagRaum.original": "",
-          "time.original": "",
           "flagRaum": "0",
-          "Datum": "heute",
+          "Datum": "2018-11-05T12:00:00+01:00",
           "flagRaum.original": "",
-          "teilnehmer": [],
-          "Datum.original": "",
-          "teilnehmer.original": "",
+          "geo-city": "",
+          "Datum.original": "Morgen",
+          "Creator": "Annika",
+          "Creator.original": "",
           "Ausstattung": [
-            "Beamer ",
-            "Presenter"
+            "Beamer "
           ],
-          "Ausstattung.original": [
-            "beamer",
-            "Presenter"
-          ],
+          "Ausstattung.original": "beamer",
+          "Content": "Digitak workplace",
           "Teilnehmer": [
             "Waldemar",
             "Hassan"
           ],
-          "FlagRaum": "0",
-          "time": "",
+          "FlagRaum": "1",
+          "geo-city.original": "",
+          "Content.original": "Digitak workplace",
           "Teilnehmer.original": [
-            "waldemar",
-            "hassan"
+            "Waldemar",
+            "Hassan"
           ]
         }
       }
     ],
     "intent": {
-      "name": "projects/alfred-2eab3/agent/intents/f930bc84-7918-4ec4-9f6e-c99eadb6480d",
-      "displayName": "Termin anfordern - no"
+      "name": "projects/alfred-2eab3/agent/intents/00985185-835c-4033-be89-ac50e54b2500",
+      "displayName": "Ausstattung Raum angeben"
     },
-    "intentDetectionConfidence": 0.75,
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {
+      "end_conversation": true
+    },
     "languageCode": "de"
   },
   "originalDetectIntentRequest": {

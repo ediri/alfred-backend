@@ -67,7 +67,11 @@ exports.getMeetingDialogFlow = (data) => {
     var content = resp.parameters.Content;
     var roomResources = resp.parameters.Ausstattung;
 
-
+    console.log(creator);
+    console.log(meetingDate);
+    console.log(bookTraditionalRoom);
+    console.log(content);
+    console.log(roomResources);
     //var calendarEntry = _.find(calendar,{'owner': 'Annika'});
     //calendarEntry.push();
 
