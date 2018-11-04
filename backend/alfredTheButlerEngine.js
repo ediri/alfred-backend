@@ -75,9 +75,9 @@ exports.getMeetingDialogFlow = (data, calendar) => {
     let meetingItem = {startingDate: moment(), title: content, equipment: roomResources, location_name: "Flein"}
     creatorCalendar = findOwnerOrCreateOwnerEntry(creatorCalendar, meetingItem, calendar, creator.name);
 
-    resp.parameters.Teilnehmer.map(x => {
-        creatorCalendar = _.find(calendar, {'owner': x});
-        creatorCalendar= findOwnerOrCreateOwnerEntry(creatorCalendar, meetingItem, calendar, x);
+    player.map(x => {
+        creatorCalendar = _.find(calendar, {'owner': x.name});
+        creatorCalendar= findOwnerOrCreateOwnerEntry(creatorCalendar, meetingItem, calendar, x.name);
     });
 };
 
