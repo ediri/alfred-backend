@@ -20,8 +20,9 @@ exports.getMeeting = (data) => {
 exports.getMeetingDialogFlow = (data) => {
 
     console.log("getMeetingDialogFlow", data);
+    var resp = data.queryResult.outputContexts[0];
     const player = [];
-    data.queryResult.outpoutContexts[0].parameters.Teilnehmer.map(x => {player.push(_.find(users,{'name':x}))});
+    resp.parameters.Teilnehmer.map(x => {player.push(_.find(users,{'name':x}))});
     player.forEach(item => {
         if (item.name == 'Entwickler'){
             item.name = 'Waldemar';
@@ -32,14 +33,13 @@ exports.getMeetingDialogFlow = (data) => {
     });
 
     var creator = _.find(users, {'name': 'Annika'});
-    var meetingDate = data.queryResult.outpoutContexts[0].parameters.Datum;
-    var bookTraditionalRoom = data.queryResult.outpoutContexts[0].parameters.FlagRaum;
-    var content = data.queryResult.outpoutContexts[0].parameters.Content;
-    var roomResources = data.queryResult.outpoutContexts[0].parameters.Ausstattung;
+    var meetingDate = resp.parameters.Datum;
+    var bookTraditionalRoom = resp.parameters.FlagRaum;
+    var content = resp.parameters.Content;
+    var roomResources = resp.parameters.Ausstattung;
 
 
-    var calendarEntry = _.find(calendar,{'owner': 'Annika'});
-
+    //var calendarEntry = _.find(calendar,{'owner': 'Annika'});
     //calendarEntry.push();
 
 
