@@ -65,6 +65,8 @@ exports.getMeetingDialogFlow = (data, calendar) => {
         player.push(_.find(users, {'name': x}))
     });
     player.forEach(item => {
+        console.log('-------------------------');
+        console.log(item);
         if (item.name == 'Entwickler') {
             item.name = 'Waldemar';
         }
