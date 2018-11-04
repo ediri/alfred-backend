@@ -1,22 +1,29 @@
 const spark = require('ciscospark/env');
 
-exports.createMeetingRoom = (title) => {
+// data.mails - data.title
+exports.createMeetingRoom = (data) => {
     spark.rooms.create({
-        title: title
+        title: data.title
     })
         .then(function(res) {
-            console.log(res)
-            spark.memberships.create({
-                roomId: res.id,
-                personEmail: "codecampwaldemar@outlook.de",
-                isModerator: false
+            data.mails.map(mail => {
+                addToChannel(mail, res.id)
             })
-                .catch(function(reason) {
-                    console.error(reason);
-                    // process.exit(1);
-                });
         })
     // Make sure to log errors in case something goes wrong.
+        .catch(function(reason) {
+            console.error(reason);
+            // process.exit(1);
+        });
+}
+
+//todo: callback
+let addToChannel = function(mail, channelId) {
+    spark.memberships.create({
+        roomId: channelId,
+        personEmail: mail,
+        isModerator: false
+    })
         .catch(function(reason) {
             console.error(reason);
             // process.exit(1);

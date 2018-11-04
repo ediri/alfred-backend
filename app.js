@@ -3,17 +3,11 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
 
 const indexRouter = require('./routes/index');
 const apiRouter = require('./routes/api');
 const calendarRouter = require('./routes/calendar');
 const calendars = require('./backend/calendar');
-
-let mongoDB = process.env.MONGODB_URI;
-mongoose.connect(mongoDB, { useNewUrlParser: true } ).then(success => console.log('db connected successfully'));
-mongoose.Promise = global.Promise;
-let db = mongoose.connection;
 
 const app = express();
 
