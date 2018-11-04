@@ -9,7 +9,7 @@ exports.createMeetingRoom = (data) => {
             data.mails.map(mail => {
                 addToChannel(mail, res.id)
             });
-            writeToChannel('Euer Termin findet am ' + data.startDate + ' statt.');
+            writeToChannel('Euer Termin findet am ' + data.startDate + ' statt.', res.id);
         })
     // Make sure to log errors in case something goes wrong.
         .catch(function(reason) {
@@ -33,6 +33,6 @@ let addToChannel = function(mail, channelId) {
 let writeToChannel = function(message, channelId){
     spark.messages.create({
         text: message,
-        roomId: room.id
+        roomId: channelId
     });
 }
