@@ -1,0 +1,66 @@
+{
+  "responseId": "6b6f12a2-bfdc-4e70-8fc6-f7f5e795a1e0",
+  "queryResult": {
+    "queryText": "nein",
+    "action": "Terminanfordern.Terminanfordern-no",
+    "parameters": {
+      "FlagRaum": "0",
+      "teilnehmer": []
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "Termin gebucht!",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "Termin gebucht!"
+          ]
+        }
+      }
+    ],
+    "outputContexts": [
+      {
+        "name": "projects/alfred-2eab3/agent/sessions/94048555-21b0-8f11-037a-c6da99f69a13/contexts/terminangefordert",
+        "lifespanCount": 4,
+        "parameters": {
+          "FlagRaum.original": "",
+          "time.original": "",
+          "flagRaum": "0",
+          "Datum": "heute",
+          "flagRaum.original": "",
+          "teilnehmer": [],
+          "Datum.original": "",
+          "teilnehmer.original": "",
+          "Ausstattung": [
+            "Beamer ",
+            "Presenter"
+          ],
+          "Ausstattung.original": [
+            "beamer",
+            "Presenter"
+          ],
+          "Teilnehmer": [
+            "Waldemar",
+            "Hassan"
+          ],
+          "FlagRaum": "0",
+          "time": "",
+          "Teilnehmer.original": [
+            "waldemar",
+            "hassan"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/alfred-2eab3/agent/intents/f930bc84-7918-4ec4-9f6e-c99eadb6480d",
+      "displayName": "Termin anfordern - no"
+    },
+    "intentDetectionConfidence": 0.75,
+    "languageCode": "de"
+  },
+  "originalDetectIntentRequest": {
+    "payload": {}
+  },
+  "session": "projects/alfred-2eab3/agent/sessions/94048555-21b0-8f11-037a-c6da99f69a13"
+}
