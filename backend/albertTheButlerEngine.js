@@ -2,7 +2,28 @@ const _ = require('lodash');
 const users = require('./users');
 const moment = require('moment');
 
-exports.getMeeting = (data) => {
+function findOwnerOrCreateOwnerEntry(creatorCalendar, data, calendar, owner) {
+    if (_.isUndefined(creatorCalendar)) {
+        creatorCalendar = {owner: owner, events: []};
+        calendar.push(creatorCalendar);
+    }
+    const entry = {
+        title: data.title,
+        creator: data.creator,
+        "date-start": data.startingDate,
+        location: 1,
+        location_name: "Leingarten",
+        equipment: data.equipment
+    };
+    creatorCalendar.events.push(entry);
+    const myArray = _.sortBy(creatorCalendar.events, dateObj => {
+        return moment(dateObj['date-start']);
+    });
+    creatorCalendar.events = myArray;
+    return creatorCalendar;
+}
+
+exports.getMeeting = (data, calendar) => {
     console.log("getMeeting", data);
 
 
@@ -14,7 +35,15 @@ exports.getMeeting = (data) => {
     });
     const momentDate = moment(data.startingDate);
     // 1 monday -  7 sunday
-    console.log(momentDate.isoWeekday());
+    //console.log(momentDate.isoWeekday());
+
+    let creatorCalendar = _.find(calendar, {'owner': data.creator});
+    creatorCalendar = findOwnerOrCreateOwnerEntry(creatorCalendar, data, calendar, data.creator);
+
+    data.attendees.map(x => {
+        creatorCalendar = _.find(calendar, {'owner': x});
+        findOwnerOrCreateOwnerEntry(creatorCalendar, data, calendar, x);
+    });
 };
 
 exports.getMeetingDialogFlow = (data) => {

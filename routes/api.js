@@ -10,15 +10,15 @@ const _ = require('lodash');
 router.post('/appointment', (req, res) => {
 
     let data = process.env.LOCAL ? require('../test_data/meetingCreateExample') : req.body;
-    theEngine.getMeeting(data);
+    theEngine.getMeeting(data, req.app.locals.calendars);
 
-    res.send({hello: 'world'});
+    res.send({message: 'Der Termin wurde angelegt'});
 });
 
 router.post('/dialogflow/appointment', (req, res) => {
 
     let data = process.env.LOCAL ? require('../test_data/dialogFlow') : req.body;
-    theEngine.getMeetingDialogFlow(data);
+    theEngine.getMeetingDialogFlow(data, req.app.locals.calendars);
 
     res.send({hello: 'world'});
 });
