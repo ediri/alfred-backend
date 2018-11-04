@@ -49,7 +49,7 @@ exports.getMeeting = (data, calendar) => {
     const webexData = {
         title: data.title,
         startDate: data.startingDate,
-        mails: [_.map(player, 'mail')]
+        mails: _.map(player, 'mail')
     }
     webex.createMeetingRoom(webexData);
 };
@@ -91,7 +91,7 @@ exports.getMeetingDialogFlow = (data, calendar) => {
     const webexData = {
         title: content,
         startDate: meetingDate,
-        mails: [_.map(player, 'mail')]
+        mails: _.map(player, 'mail')
     }
     webex.createMeetingRoom(webexData);
 };
