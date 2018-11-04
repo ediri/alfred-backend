@@ -18,7 +18,29 @@ exports.getMeeting = (data) => {
 };
 
 exports.getMeetingDialogFlow = (data) => {
+
     console.log("getMeetingDialogFlow", data);
+    const player = [];
+    data.queryResult.outpoutContexts[0].parameters.Teilnehmer.map(x => {player.push(_.find(users,{'name':x}))});
+    player.forEach(item => {
+        if (item.name == 'Entwickler'){
+            item.name = 'Waldemar';
+        }
+        if (item.name == 'Netzwerker'){
+            item.name = 'Michael';
+        }
+    });
+
+    var creator = _.find(users, {'name': 'Annika'});
+    var meetingDate = data.queryResult.outpoutContexts[0].parameters.Datum;
+    var bookTraditionalRoom = data.queryResult.outpoutContexts[0].parameters.FlagRaum;
+    var content = data.queryResult.outpoutContexts[0].parameters.Content;
+    var roomResources = data.queryResult.outpoutContexts[0].parameters.Ausstattung;
+
+
+    var calendarEntry = _.find(calendar,{'owner': 'Annika'});
+
+    //calendarEntry.push();
 
 
     //const player = [];
