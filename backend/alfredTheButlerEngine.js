@@ -40,16 +40,17 @@ exports.getMeeting = (data, calendar) => {
 
     let creatorCalendar = _.find(calendar, {'owner': data.creator});
     creatorCalendar = findOwnerOrCreateOwnerEntry(creatorCalendar, data, calendar, data.creator);
-
+    var t = [];
     data.attendees.map(x => {
         creatorCalendar = _.find(calendar, {'owner': x});
         findOwnerOrCreateOwnerEntry(creatorCalendar, data, calendar, x);
+        t.push(x.mail);
     });
 
     const webexData = {
         title: data.title,
         startDate: data.startingDate,
-        mails: _.map(player, 'mail')
+        mails: t
     }
     webex.createMeetingRoom(webexData);
 };
@@ -82,16 +83,17 @@ exports.getMeetingDialogFlow = (data, calendar) => {
 
     let meetingItem = {startingDate: moment(), title: content, equipment: roomResources, location_name: "Flein"}
     creatorCalendar = findOwnerOrCreateOwnerEntry(creatorCalendar, meetingItem, calendar, creator.name);
-
+    var t = [];
     player.map(x => {
         creatorCalendar = _.find(calendar, {'owner': x.name});
         creatorCalendar= findOwnerOrCreateOwnerEntry(creatorCalendar, meetingItem, calendar, x.name);
+        t.push(x.mail);
     });
 
     const webexData = {
         title: content,
         startDate: meetingDate,
-        mails: _.map(player, 'mail')
+        mails: t
     }
     webex.createMeetingRoom(webexData);
 };
