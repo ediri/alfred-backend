@@ -62,7 +62,9 @@ exports.getMeetingDialogFlow = (data, calendar) => {
     console.log(resp);
     const player = [];
     resp.parameters.Teilnehmer.map(x => {
-        player.push(_.find(users, {'name': x}))
+        var user= _.find(users, {'name': x});
+        if (!_.isUndefined(user))
+            player.push()
     });
     player.forEach(item => {
         console.log('-------------------------');
