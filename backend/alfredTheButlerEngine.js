@@ -46,18 +46,20 @@ exports.getMeeting = (data, calendar) => {
     });
 };
 
-exports.getMeetingDialogFlow = (data) => {
+exports.getMeetingDialogFlow = (data, calendar) => {
 
     console.log("getMeetingDialogFlow", data);
     var resp = data.queryResult.outputContexts[0];
     console.log(resp);
     const player = [];
-    resp.parameters.Teilnehmer.map(x => {player.push(_.find(users,{'name':x}))});
+    resp.parameters.Teilnehmer.map(x => {
+        player.push(_.find(users, {'name': x}))
+    });
     player.forEach(item => {
-        if (item.name == 'Entwickler'){
+        if (item.name == 'Entwickler') {
             item.name = 'Waldemar';
         }
-        if (item.name == 'Netzwerker'){
+        if (item.name == 'Netzwerker') {
             item.name = 'Michael';
         }
     });
@@ -68,24 +70,15 @@ exports.getMeetingDialogFlow = (data) => {
     var content = resp.parameters.Content;
     var roomResources = resp.parameters.Ausstattung;
 
-    console.log(creator);
-    console.log(meetingDate);
-    console.log(bookTraditionalRoom);
-    console.log(content);
-    console.log(roomResources);
-    //var calendarEntry = _.find(calendar,{'owner': 'Annika'});
-    //calendarEntry.push();
+    let creatorCalendar = _.find(calendar, {'owner': creator.name});
 
+    let meetingItem = {startingDate: moment(), title: content, equipment: roomResources, location_name: "Flein"}
+    creatorCalendar = findOwnerOrCreateOwnerEntry(creatorCalendar, meetingItem, calendar, creator.name);
 
-    //const player = [];
-    //const creator = _.find(users, {'name': data.creator});
-    //player.push(creator);
-    //const map1 = data.attendees.map(x => {
-    //    player.push(_.find(users, {'name': x}));
-    //});
-    //const momentDate = moment(data.startingDate);
-    // 1 monday -  7 sunday
-    //console.log(momentDate.isoWeekday());
+    resp.parameters.Teilnehmer.map(x => {
+        creatorCalendar = _.find(calendar, {'owner': x});
+        creatorCalendar= findOwnerOrCreateOwnerEntry(creatorCalendar, meetingItem, calendar, x);
+    });
 };
 
 /*exports.findBestLocations = (locations) => {
