@@ -1,10 +1,11 @@
 {
-  "responseId": "11bc765c-8eb3-4c86-abfb-eb783ef873a1",
+  "responseId": "de4e5290-8a5b-4929-a766-5570ec70f9a6",
   "queryResult": {
-    "queryText": "beamer",
+    "queryText": "Beamer und Presenter",
     "parameters": {
       "Ausstattung": [
-        "Beamer "
+        "Beamer ",
+        "Presenter"
       ]
     },
     "allRequiredParamsPresent": true,
@@ -25,27 +26,35 @@
         "parameters": {
           "FlagRaum.original": "",
           "flagRaum": "0",
-          "Datum": "2018-11-05T12:00:00+01:00",
+          "Datum": "2018-11-08T10:22:08+01:00",
           "flagRaum.original": "",
-          "geo-city": "",
-          "Datum.original": "Morgen",
+          "Datum.original": "donnerstag",
           "Creator": "Annika",
           "Creator.original": "",
           "Ausstattung": [
-            "Beamer "
+            "Beamer ",
+            "Presenter"
           ],
-          "Ausstattung.original": "beamer",
-          "Content": "Digitak workplace",
+          "Ausstattung.original": [
+            "Beamer",
+            "Presenter"
+          ],
+          "Content": "Einführung DevOps",
           "Teilnehmer": [
+            "Hassan",
+            "Engin",
             "Waldemar",
-            "Hassan"
+            "Michael",
+            "Entwickler"
           ],
           "FlagRaum": "1",
-          "geo-city.original": "",
-          "Content.original": "Digitak workplace",
+          "Content.original": "Einführung DevOps",
           "Teilnehmer.original": [
-            "Waldemar",
-            "Hassan"
+            "hassan,",
+            "engin,",
+            "waldemar,",
+            "michael",
+            "entwickler"
           ]
         }
       }
