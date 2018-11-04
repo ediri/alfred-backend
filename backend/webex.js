@@ -8,7 +8,8 @@ exports.createMeetingRoom = (data) => {
         .then(function(res) {
             data.mails.map(mail => {
                 addToChannel(mail, res.id)
-            })
+            });
+            writeToChannel('Euer Termin findet am ' + data.startDate + ' statt.');
         })
     // Make sure to log errors in case something goes wrong.
         .catch(function(reason) {
@@ -17,7 +18,6 @@ exports.createMeetingRoom = (data) => {
         });
 }
 
-//todo: callback
 let addToChannel = function(mail, channelId) {
     spark.memberships.create({
         roomId: channelId,
@@ -28,4 +28,11 @@ let addToChannel = function(mail, channelId) {
             console.error(reason);
             // process.exit(1);
         });
+}
+
+let writeToChannel = function(message, channelId){
+    spark.messages.create({
+        text: message,
+        roomId: room.id
+    });
 }

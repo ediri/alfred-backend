@@ -44,6 +44,7 @@ router.get('/appointment', (req, res) => {
 router.post('/createMeetingRoom', (req, res) => {
     let data = {
         title: 'Title',
+        startDate: '2018-11-04',
         mails: [
             'codecampwaldemar@outlook.com',
             'codecampengin@outlook.com'
